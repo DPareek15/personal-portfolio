@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+## Description
 
-First, run the development server:
+My personal portfolio website which contains my technical skills, personal projects, blog posts and contact details.
+The details related to this website are given below.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Technologies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project has been built in **TypeScript** using the following technologies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Next.js
+- Tailwind CSS
+- CSS3 modules
+- Mantine
+- Tabler Icons
+- VS Code
+- Vercel
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Features
 
-## Learn More
+- Fully Responsive Website
+- Dark Mode
+- Email Contact Form
+- Social Links and Resume Download
+- Built with Mantine UI
 
-To learn more about Next.js, take a look at the following resources:
+### Bugs and Suggestions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+You can report any issues related to the website on GitHub or on my personal contact email.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Usage Instructions
 
-## Deploy on Vercel
+The link for the website will be available here.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+You can fork this repository and make your own changes as well. Kindly provide proper credit by linking here.
+You will need `Node.js` and `Git` installed on your device. Install the required packages using `npm install` and start the project by running `npm run dev` in the project directory. You can edit the project components in the `src/components`.
