@@ -1,0 +1,16 @@
+.wrapper {
+  padding: calc(var(--mantine-spacing-xl) * 2)
+    calc(var(--mantine-spacing-xl) * 1);
+  min-height: 650px;
+  margin: 0%;
+  background-image: url(https://images.unsplash.com/photo-1470790376778-a9fbc86d70e2);
+  background-size: cover;
+  background-position: center top;
+}
+
+.title {
+  margin-bottom: calc(var(--mantine-spacing-xl) * 1.5);
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 1.1;
+}
