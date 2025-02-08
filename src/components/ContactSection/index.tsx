@@ -1,14 +1,6 @@
 'use client';
 
-import {
-  IconAt,
-  IconBrandGithub,
-  IconBrandLeetcode,
-  IconBrandLinkedin,
-  IconBrandX,
-  IconPhone,
-  IconSchool,
-} from '@tabler/icons-react';
+import { IconAt, IconPhone, IconSchool } from '@tabler/icons-react';
 import {
   ActionIcon,
   Button,
@@ -25,27 +17,7 @@ import {
 import classes from './ContactSection.module.css';
 import React, { FC, JSX, useState } from 'react';
 import Link from 'next/link';
-
-interface SocialLink {
-  icon: typeof IconBrandGithub;
-  link: string;
-}
-
-interface FormData {
-  email: string;
-  name: string;
-  message: string;
-}
-
-const socials: SocialLink[] = [
-  { icon: IconBrandGithub, link: 'https://github.com/DPareek15' },
-  {
-    icon: IconBrandLinkedin,
-    link: 'https://www.linkedin.com/in/dushyant-pareek-072111290/',
-  },
-  { icon: IconBrandX, link: 'https://x.com/_DPareek' },
-  { icon: IconBrandLeetcode, link: 'https://leetcode.com/u/user6063jP/' },
-];
+import { socials } from '@/data/data_items';
 
 export const ContactSection: FC = () => {
   const [email, setEmail] = useState<string>('');
@@ -72,7 +44,7 @@ export const ContactSection: FC = () => {
   ): Promise<void> => {
     event.preventDefault();
 
-    const data: FormData = {
+    const data: FormDataType = {
       name,
       email,
       message,

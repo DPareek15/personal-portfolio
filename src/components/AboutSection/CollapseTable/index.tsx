@@ -12,24 +12,6 @@ import {
 import { useDisclosure } from '@mantine/hooks';
 import { IconChevronDown, IconChevronUp } from '@tabler/icons-react';
 
-interface GradientProps {
-  from: string;
-  to: string;
-  deg: number;
-}
-
-interface SkillRow {
-  icon: string;
-  name: string;
-  value?: number;
-}
-
-type CollapseTableProps = {
-  title: string;
-  gradient: GradientProps;
-  data: SkillRow[];
-};
-
 export function CollapseTable({
   title,
   gradient,

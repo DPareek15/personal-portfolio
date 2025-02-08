@@ -8,39 +8,7 @@ import {
   Container,
 } from '@mantine/core';
 import classes from './BlogCard.module.css';
-
-interface BlogArticle {
-  title: string;
-  tag: string;
-  image: string;
-}
-
-const blogData: BlogArticle[] = [
-  {
-    title: 'Forests to visit1',
-    tag: 'Nature',
-    image:
-      'https://images.unsplash.com/photo-1508193638397-1c4234db14d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-  },
-  {
-    title: 'Forests to visit2',
-    tag: 'Nature',
-    image:
-      'https://images.unsplash.com/photo-1508193638397-1c4234db14d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-  },
-  {
-    title: 'Forests to visit3',
-    tag: 'Nature',
-    image:
-      'https://images.unsplash.com/photo-1508193638397-1c4234db14d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-  },
-  {
-    title: 'Forests to visit4',
-    tag: 'Nature',
-    image:
-      'https://images.unsplash.com/photo-1508193638397-1c4234db14d8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&q=80',
-  },
-];
+import { blogData } from '@/data/data_items';
 
 export function BlogCards(): JSX.Element {
   const blogs: JSX.Element[] = blogData.map((article: BlogArticle) => (

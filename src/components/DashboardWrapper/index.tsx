@@ -15,16 +15,6 @@ import { DarkModeButton } from './DarkModeButton';
 import { DownloadButton } from './DownloadButton';
 import Link from 'next/link';
 
-interface NavbarLink {
-  link: string;
-  label: string;
-  icon: typeof IconHome;
-}
-
-interface DashboardProps {
-  children: React.ReactNode;
-}
-
 const data: NavbarLink[] = [
   { link: '/', label: 'Home', icon: IconHome },
   { link: '/#aboutSection', label: 'About Me', icon: IconUser },

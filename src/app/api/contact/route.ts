@@ -2,30 +2,11 @@ import { NextRequest, NextResponse } from 'next/server';
 import nodemailer from 'nodemailer';
 import Mail from 'nodemailer/lib/mailer';
 
-interface FormData {
-  name: string;
-  email: string;
-  message: string;
-}
-
-interface EmailConfig {
-  service: string;
-  auth: {
-    user: string | undefined;
-    pass: string | undefined;
-  };
-}
-
-interface ApiResponse {
-  message?: string;
-  error?: string | Error;
-}
-
 export async function POST(
   req: NextRequest
 ): Promise<NextResponse<ApiResponse>> {
   try {
-    const { name, email, message }: FormData = await req.json();
+    const { name, email, message }: FormDataType = await req.json();
 
     if (!email || !message) {
       return NextResponse.json(
