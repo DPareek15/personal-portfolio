@@ -71,6 +71,16 @@ const data: Project[][] = [
   ],
   [
     {
+      title: 'Collaborative Text Editor',
+      image:
+        'https://images.unsplash.com/photo-1519337265831-281ec6cc8514?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+      description:
+        'This is a small text editor web application with collaborative typing, document sharing, interactive comments, automatic syncing and notifications. It is built with utility in mind and comes in dark mode to ensure a comfortable experience.',
+      link: 'https://github.com/DPareek15/collaborative-text-editor',
+      visitLink: 'https://writesync-editor.vercel.app/',
+      tags: ['Next.js', 'TailwindCSS', 'Liveblocks', 'TypeScript'],
+    },
+    {
       title: 'Project Management App',
       image:
         'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
