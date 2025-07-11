@@ -72,24 +72,26 @@ declare interface ProjectCardProps {
 
 // For Contact section and email API route
 
-declare interface SocialLink {
-  icon: typeof IconBrandGithub;
-  link: string;
-}
-
 declare interface FormDataType {
   email: string;
   name: string;
   message: string;
 }
 
-// For dashboard
+type NotificationStatus =
+  | 'success'
+  | 'error'
+  | 'warning'
+  | 'loading'
+  | 'default';
 
-declare interface NavbarLink {
-  link: string;
-  label: string;
-  icon: typeof IconHome;
+declare interface NotificationProps {
+  status: NotificationStatus;
+  title: string;
+  message: string;
 }
+
+// For dashboard
 
 declare interface DashboardProps {
   children: React.ReactNode;

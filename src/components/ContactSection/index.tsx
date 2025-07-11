@@ -17,7 +17,8 @@ import {
 import classes from './ContactSection.module.css';
 import React, { FC, JSX, useState } from 'react';
 import Link from 'next/link';
-import { socials } from '@/data/data_items';
+import { SocialLink, socials } from '@/data/data_items';
+import { Notification } from './Notifications';
 
 export const ContactSection: FC = () => {
   const [email, setEmail] = useState<string>('');
@@ -51,6 +52,10 @@ export const ContactSection: FC = () => {
     };
 
     try {
+      Notification.showLoading(
+        'Sending message',
+        'Your message is being sent. Please wait...'
+      );
       fetch('/api/contact', {
         method: 'POST',
         headers: {
@@ -61,9 +66,15 @@ export const ContactSection: FC = () => {
       }).then((res) => {
         console.log('Response received');
         if (res.status === 200) {
-          alert('Message sent successfully.');
+          Notification.showSuccess(
+            'Message sent',
+            'Your message has been sent successfully.'
+          );
         } else {
-          alert('Failed to send message! Please try again.');
+          Notification.showFailure(
+            'Message not sent',
+            'Your message could not be sent. Please try again.'
+          );
         }
       });
     } catch (error) {

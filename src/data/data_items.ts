@@ -1,10 +1,36 @@
 import {
+  Icon,
   IconBrandGithub,
   IconBrandLeetcode,
   IconBrandLinkedin,
   IconBrandX,
+  IconCheck,
   IconChefHat,
+  IconCircleLetterI,
+  IconExclamationMark,
+  IconProps,
+  IconX,
 } from '@tabler/icons-react';
+import { ForwardRefExoticComponent, RefAttributes } from 'react';
+
+type IconType = ForwardRefExoticComponent<IconProps & RefAttributes<Icon>>;
+
+declare interface Notification {
+  type: NotificationStatus;
+  color: string;
+  icon?: IconType;
+}
+
+export interface NavbarLink {
+  link: string;
+  label: string;
+  icon: IconType;
+}
+
+export interface SocialLink {
+  icon: IconType;
+  link: string;
+}
 
 export const languages: RatedSkillItem[] = [
   {
@@ -265,4 +291,12 @@ export const socials: SocialLink[] = [
   { icon: IconBrandX, link: 'https://x.com/_DPareek' },
   { icon: IconBrandLeetcode, link: 'https://leetcode.com/u/user6063jP/' },
   { icon: IconChefHat, link: 'https://www.codechef.com/users/hardy_cloud_78' },
+];
+
+export const notificationDetails: Notification[] = [
+  { type: 'success', color: 'green', icon: IconCheck },
+  { type: 'error', color: 'red', icon: IconX },
+  { type: 'warning', color: 'yellow', icon: IconExclamationMark },
+  { type: 'loading', color: 'gray' },
+  { type: 'default', color: 'blue', icon: IconCircleLetterI },
 ];

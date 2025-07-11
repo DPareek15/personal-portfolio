@@ -14,6 +14,7 @@ import classes from './Navbar.module.css';
 import { DarkModeButton } from './DarkModeButton';
 import { DownloadButton } from './DownloadButton';
 import Link from 'next/link';
+import { NavbarLink } from '@/data/data_items';
 
 const data: NavbarLink[] = [
   { link: '/', label: 'Home', icon: IconHome },
